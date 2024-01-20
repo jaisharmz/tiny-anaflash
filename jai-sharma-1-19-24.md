@@ -11,10 +11,10 @@ git clone https://github.com/jaisharmz/tiny-anaflash.git
 Then, run a few setup commands:
 ```
 cd ./benchmark/training/image_classification # go into the image classification directory
-pip3 install -r requirements.txt
-wget https://www.cs.toronto.edu/~kriz/cifar-10-python.tar.gz
-tar -xvf cifar-10-python.tar.gz
-python3 perf_samples_loader.py
+pip3 install -r requirements.txt # install required packages
+wget https://www.cs.toronto.edu/~kriz/cifar-10-python.tar.gz # download data
+tar -xvf cifar-10-python.tar.gz # unpack zipped data
+python3 perf_samples_loader.py # split data into batches
 ```
 
 After cloning the repository, we can run the commands below to print the metrics of the pretrained model before and after quantization. 
@@ -24,7 +24,7 @@ python3 tflite_test.py # find benchmark results on model after quantization
 ```
 If you would like to train and test a model from scratch, run the following commands.
 ```
-python3 train.py # collect data and train model from scratch
+python3 train.py # collect data and train model from scratch (changed from 500 epochs to 5 epochs to limit training time)
 python3 test.py # find benchmark results on trained model before quantization
 python3 model_converter.py # quantize trained model
 python3 tflite_test.py # find benchmark results on trained model after quantization
