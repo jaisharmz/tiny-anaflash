@@ -8,9 +8,13 @@ First, clone this respository by using the following command:
 git clone https://github.com/jaisharmz/tiny-anaflash.git
 ```
 
-Then, go into the image classification directory:
+Then, run a few setup commands:
 ```
-cd ./benchmark/training/image_classification
+cd ./benchmark/training/image_classification # go into the image classification directory
+pip3 install -r requirements.txt
+wget https://www.cs.toronto.edu/~kriz/cifar-10-python.tar.gz
+tar -xvf cifar-10-python.tar.gz
+python3 perf_samples_loader.py
 ```
 
 After cloning the repository, we can run the commands below to print the metrics of the pretrained model before and after quantization. 
