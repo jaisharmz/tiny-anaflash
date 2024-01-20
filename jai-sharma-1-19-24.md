@@ -3,6 +3,11 @@
 ## 19 January 2024
 The goal was to reproduce the tinyML benchmark for image classification. We can do this by either running the testing metrics on the pretrained model weights or training a new model ourselves and finding the metrics on that model. 
 
+First, clone this respository by using the following command:
+```
+git clone https://github.com/jaisharmz/tiny-anaflash.git
+```
+
 After cloning the repository, we can run the commands below to print the metrics of the pretrained model before and after quantization. 
 ```
 python3 ./benchmark/training/image_classification/test.py # find benchmark results on model before quantization
