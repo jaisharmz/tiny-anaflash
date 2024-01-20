@@ -17,7 +17,7 @@ import keras_model
 
 import datetime
 
-EPOCHS = 500
+EPOCHS = 5 # DEFAULT: 500 (changed for less training time)
 BS = 32
 
 # get date ant time to save model
