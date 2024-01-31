@@ -1,4 +1,4 @@
-# Jai Sharma Code and Explanations - Anaflash Inc.
+# Jai Sharma Code and Explanations
 
 ## 19 January 2024
 The goal was to reproduce the tinyML benchmark for image classification. We can do this by either running the testing metrics on the pretrained model weights or training a new model ourselves and finding the metrics on that model. 
